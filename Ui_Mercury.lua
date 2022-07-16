@@ -420,19 +420,19 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("MercurySettings.json") then
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+		if not isfile("EverestUiSettings.json") then
+			writefile("EverestUiSettings.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
+		settings = HTTPService:JSONDecode(readfile("EverestUiSettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+			writefile("EverestUiSettings.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Everest",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/deeeity/mercury-lib"
@@ -689,7 +689,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=9908447691",
+		Image = "http://www.roblox.com/asset/?id=8987392618",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
@@ -764,7 +764,7 @@ function Library:create(options)
 	}):round(7)
 
 	local profilePictureContainer = profile:object("ImageLabel", {
-		Image = "http://www.roblox.com/asset/?id=9908447691",
+		Image = "http://www.roblox.com/asset/?id=8987392618",
 		Theme = {BackgroundColor3 = {"Secondary", 10}},
 		AnchorPoint = Vector2.new(0, 0.5),
 		Position = UDim2.new(0, 10, 0.5),
@@ -789,7 +789,7 @@ function Library:create(options)
 	end
     
     if _G.MAP == nil or _G.MAP == false then
-        _G.MAP = "The Beast Script For You."
+        _G.MAP = "Blox Fruit"
     end
 	local profileName = profile:object("TextLabel", {
 		Text = _G.MAP,
