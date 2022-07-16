@@ -789,7 +789,7 @@ function Library:create(options)
 	end
     
     if _G.MAP == nil or _G.MAP == false then
-        _G.MAP = "Blox Fruit"
+        _G.MAP = "The Beast Script For You."
     end
 	local profileName = profile:object("TextLabel", {
 		Text = _G.MAP,
@@ -831,7 +831,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(24, 24),
 		Position = UDim2.new(1, -10, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
-		Image = "http://www.roblox.com/asset/?id=8559790237"
+		Image = "http://www.roblox.com/asset/?id=9908447691"
 	}):tooltip("settings")
 
 	local creditsTabIcon = profile:object("ImageButton", {
@@ -880,7 +880,7 @@ function Library:create(options)
 	local settingsTab = Library.tab(mt, {
 		Name = "Settings",
 		Internal = settingsTabIcon,
-		Icon = "rbxassetid://8559790237"
+		Icon = "rbxassetid://9908447691"
 	})
 
 	settingsTab:_theme_selector()
