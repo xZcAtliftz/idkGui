@@ -689,7 +689,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=9908447691",
+		Image = "http://www.roblox.com/asset/?id=10254128865",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
@@ -764,7 +764,7 @@ function Library:create(options)
 	}):round(7)
 
 	local profilePictureContainer = profile:object("ImageLabel", {
-		Image = "http://www.roblox.com/asset/?id=9908447691",
+		Image = "http://www.roblox.com/asset/?id=10254128865",
 		Theme = {BackgroundColor3 = {"Secondary", 10}},
 		AnchorPoint = Vector2.new(0, 0.5),
 		Position = UDim2.new(0, 10, 0.5),
